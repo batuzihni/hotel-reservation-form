@@ -10,7 +10,7 @@ A simple **Hotel Reservation Form** built using **HTML5 & CSS3**. This form allo
 - Styled using modern CSS (shadows, rounded corners, and form elements) 🎨
 
 ## 📸 Preview
-![Hotel Reservation Form](https://your-image-url.com) *(Replace with an actual screenshot if needed.)*
+[preview-hotel-reservation-form.png](https://github.com/batuzihni/hotel-reservation-form/blob/main/preview-hotel-reservation-form.png?raw=true)
 
 ## 🛠️ Technologies Used
 - **HTML5** for structuring the form  
