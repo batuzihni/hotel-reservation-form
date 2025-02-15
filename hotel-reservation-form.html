@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercise 4</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 20px;
+                background-color: #818181;
+            }
+
+            .container{
+                width: 55%;
+                margin: auto;
+                background: #0040ff;
+                padding: 6%;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px black;
+            }
+
+            h1{
+                text-align: center;
+                color: #ffffff;
+            }
+
+            .section{
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .section-title{
+                background-color: #ddd;
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 10px 10px 0 0;
+                position: relative;
+                top: -10px;
+                left: -10px;
+                display: inline-block;
+            }
+
+            .personal-details{
+                background: #f0f1f0;
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            .booking-details{
+                background-color: #f0f1f0;
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            label{
+                font-weight: bold;
+            }
+
+            input, select, textarea {
+                width: 100%;
+                padding: 5px;
+                margin-top: 5px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                
+            }
+
+            .radio-group{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Hotel Reservation</h1>
+
+            <!--Personal details section-->
+            <div class="section personal-details">
+                <div class="section-title">Personal Details</div>
+                <form id="reservation-form" action="/submit" method="post">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Enter your first name">
+
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Enter your last name">
+
+                    <label for="email">E-Mail Address:</label>
+                    <input type="email" id="email" name="email" placeholder="someone@somewhere.com">
+                    
+                    <label for="password">Setup a Password:</label>
+                    <input type="password" id="password" name="password" placeholder="123456">
+                </form>
+            </div>
+
+            <!--Booking details section-->
+            <div class="section booking-details">
+                <div class="section-title">Booking Details</div>
+                <form>
+                    <label for="checkin"> Check-in Day:</label>
+                    <input type="date" id="checkin" name="checkin">
+
+                    <label for="days">Number of Days:</label>
+                    <input type="number" id="days" name="days">                    
+                    
+                    <label>Room Type:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="room" value="single">Single Room</label>
+                        <label><input type="radio" name="room" value="double">Double Room</label>
+                        <label><input type="radio" name="room" value="king">King Room</label>
+                    </div>
+                    
+                    <label for="breakfast">Breakfast:</label>
+                    <select name="breakfast" id="breakfast">
+                        <option value="include">Include</option>
+                        <option value="exclude">Exclude</option>
+                    </select>
+
+                    <label for="special">Special Requirements:</label>
+                    <textarea name="special" id="special" rows="3" placeholder="Please provide any special requirements"></textarea>
+
+                    <div class="button-container">
+                        <button type="reset" class="reset-btn">Reset</button>
+                        <button type="submit" class="submit">Send</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+
+    <footer>
+        <p style="text-align: center; font-size: 10px; color: white;">Batuhan Amirzehni 2025</p>
+    </footer>
+</body>
+</html>
